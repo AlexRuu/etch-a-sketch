@@ -12,8 +12,10 @@ function makeGrid(row, col) {
 
 makeGrid(16, 16);
 
-// Draw function 
+// Get squares div variable for brushes
 const blocks = document.querySelectorAll('.square');
+
+// Draw function 
 
 function draw() {
     blocks.forEach((div) => {
@@ -28,3 +30,16 @@ function draw() {
 let drawBrush = document.querySelector('.draw-brush');
 drawBrush.addEventListener('click', draw);
 
+// Erase function 
+function erase () {
+    blocks.forEach((div) => {
+        div.addEventListener('mousemove', function(event) {
+            if (event.buttons === 1) {
+                div.setAttribute('style', 'background-color: white;')
+            };
+        });
+    });
+};
+
+let eraseBrush = document.querySelector('.erase-brush');
+eraseBrush.addEventListener('click', erase);
