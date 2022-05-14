@@ -1,0 +1,10 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    border: 1px solid;
+    padding: 33px;
+}
