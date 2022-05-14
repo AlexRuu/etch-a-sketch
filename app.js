@@ -25,4 +25,6 @@ function draw() {
     });
 };
 
-draw();
+let drawBrush = document.querySelector('.draw-brush');
+drawBrush.addEventListener('click', draw);
+
