@@ -12,3 +12,17 @@ function makeGrid(row, col) {
 
 makeGrid(16, 16);
 
+// Draw function 
+const blocks = document.querySelectorAll('.square');
+
+function draw() {
+    blocks.forEach((div) => {
+        div.addEventListener('mousemove', function(event) {
+            if (event.buttons === 1) {
+                div.setAttribute('style', 'background-color: black;')
+            };
+        });
+    });
+};
+
+draw();
