@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="app.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Etch-a-Sketch</title>
 </head>
 <body>
+    <h1 class="title">Etch-a-Sketch</h1>
     <div class="container">
-        <div class="side-panel">
-            <button class="draw-brush">Brush</button>
-            <input type="color" class="colour" name="colour">
-            <button class="erase-brush">Eraser</button>
-        </div>
         <div class="grid-container"></div>
+        <div class="side-panel">
+            <div class="buttons">
+                <input type="color" name="colour" class="colour">
+                <button class="draw">Brush</button>
+                <button class="random">Randomize Brush</button>
+                <button class="erase">Erase</button>
+                <button class="clear">Clear Grid</button>
+            </div>
+            <input type="range" class="size" name="size" min="10" max="64" value="16">
+            <output class="output">16 x 16</output>
+        </div>
     </div>
 </body>
 </html>
